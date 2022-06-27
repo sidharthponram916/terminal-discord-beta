@@ -1,5 +1,5 @@
 # terminal-discord-beta
-An add-on so that you can use discord and code at the same time. 
+An add-on so that you can use Discord and code at the same time. 
 
 Examples are in the repository. 
 
