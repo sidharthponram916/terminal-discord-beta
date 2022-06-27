@@ -1,12 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client(); 
 
-const k = "OTA1NTA1MDc5ODcwNzU4OTc1.YYLDUg."
-const e = "EcsDLCGQ0LtT"
-const y = "_zJZW_sWEZvyW_E"
+// of course, you can shield your key with .env as well
+const key = "<your_bot_key>" 
 
 let channelName = ""; 
-let name = "VaderAI"; 
+let name = "<your_display_name>"; 
 const chalk = require('chalk');
 
 const readline = require('readline'); 
@@ -55,7 +54,7 @@ client.on('ready', async () => {
 client.on('message', async msg => { 
 
       if (msg.channel.name == channelName) {            
-           if (msg.author.tag !== "VaderAI#7202") { 
+           if (msg.author.tag !== "<your_bot_user_tag>") { 
                console.log(`${chalk.blueBright(`${msg.author.username}`)}: ${msg.content}`);
            }   
       }
@@ -81,7 +80,7 @@ client.on('message', async msg => {
                     console.log(`${chalk.yellowBright(msg.author.username)}: ${msg.content}`); 
                 }
        
-                channel.send(`**${name}** has connected to this channel via DiscordFeatherweight`)
+                channel.send(`**${name}** has connected to this channel via Discord FeatherWeight`)
 
                }
             else {
@@ -91,4 +90,4 @@ client.on('message', async msg => {
       })
 })
   
-client.login(`${k}${e}${y}`);
+client.login(`${key}`);
