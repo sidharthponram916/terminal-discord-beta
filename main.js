@@ -1,12 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client(); 
 
-const k = "OTA1NTA1MDc5ODcwNzU4OTc1.YYLDUg."
-const e = "EcsDLCGQ0LtT"
-const y = "_zJZW_sWEZvyW_E"
-
+const key = "<bot token>"
 let channelName = ""; 
-let name = "VaderAI"; 
+let name = "<username>"; 
 const chalk = require('chalk');
 
 const readline = require('readline'); 
@@ -97,4 +94,4 @@ client.on('message', async msg => {
       })
 })                
   
-client.login(`${k}${e}${y}`);
+client.login(`${key}`);
