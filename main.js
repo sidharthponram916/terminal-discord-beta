@@ -52,7 +52,7 @@ client.on('ready', async () => {
 client.on('message', async msg => { 
 
       if (msg.channel.name == channelName) {            
-           if (msg.author.tag !== "VaderAI#7202") { 
+           if (msg.author.tag !== "<bot user tag>") { 
                console.log(`${chalk.blueBright(`${msg.author.username}`)}: ${msg.content}`);
            }   
       }
